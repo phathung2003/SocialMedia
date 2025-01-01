@@ -1,0 +1,146 @@
+/* 1. Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Biến màu (Sáng - tối) */
+:root {
+  --headerBackground: #ffffff;
+  --headerForeground: #171717;
+  --headerBorder: #ecf0f5;
+
+  --bodyBackground: #ffffff;
+  --bodyForeground: #171717;
+
+  --footerBackground: #ffffff;
+  --footerForeground: white;
+
+  --searchBorder: #e2e8f0;
+  --searchFocusBorder: #3182ce;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+   --headerBackground: #ffffff;
+  --headerForeground: #171717;
+  --headerBorder: #ecf0f5;
+
+  --bodyBackground: #ffffff;
+  --bodyForeground: #171717;
+
+  --footerBackground: #ffffff;
+  --footerForeground: white;
+
+  --searchBorder: #e2e8f0;
+  --searchFocusBorder: #3182ce;
+  }
+} */
+
+/* Header */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  align-items: center;
+  width: auto;
+  height: 80px;
+  padding: 20px 92px 0 92px;
+
+  background-color: var(--headerBackground);
+  color: var(--headerForeground);
+
+  border-bottom: 1px solid var(--headerBorder);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Thanh tìm kiếm */
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 9px 24px 9px 24px;
+
+  width: 582px;
+  height: 44px;
+  border: 1px solid var(--searchBorder);
+  border-radius: 8px;
+
+  gap: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.search-container:focus-within {
+  border-color: var(--searchFocusBorder);
+}
+
+.search-icon {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.search-container:focus-within .search-icon {
+  transform: translateX(-20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-input {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: transform 0.3s ease;
+
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.search-container:focus-within .search-input {
+  transform: translateX(calc(-20px - 12px));
+}
+
+/* Cài đặt */
+.option-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 16px;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Body */
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  width: auto;
+  min-height: calc(100vh - 80px);
+  padding: 48px 92px 0 92px;
+  background-color: var(--bodyBackground);
+  color: var(--bodyForeground);
+}
