@@ -94,6 +94,7 @@ const config = tseslint.config(
 
       "import-x/no-unresolved": ["error", { ignore: ["geist"] }],
       "react-compiler/react-compiler": "error",
+      "@next/next/no-img-element": "off",
     },
   },
 
