@@ -14,6 +14,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Social",
   description: "Social Media",
+  icons: "/logo.svg",
 };
 
 export default function RootLayout({
@@ -24,9 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Thêm hình trên thanh thu nhỏ */}
-      <head>
-        <link rel="icon" href="/logo.svg" />
-      </head>
       <body
         className={`${geistSans.className} ${geistMono.className} antialiased`}
       >

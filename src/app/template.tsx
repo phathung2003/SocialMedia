@@ -1,6 +1,11 @@
-import { Container } from "@/components";
+import { Container, Header } from "@/components";
 
 const RootTemplate = ({ children }: { children: React.ReactNode }) => {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <Header />
+      {children}
+    </Container>
+  );
 };
 export default RootTemplate;

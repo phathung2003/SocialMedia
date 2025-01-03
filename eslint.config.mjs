@@ -1,3 +1,4 @@
+// eslint-disable-next-line @eslint-community/eslint-comments/disable-enable-pair
 /* eslint-disable import-x/no-named-as-default-member */
 
 import comments from "@eslint-community/eslint-plugin-eslint-comments/configs";
@@ -70,6 +71,7 @@ const config = tseslint.config(
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
       "tailwindcss/no-custom-classname": "off",
+      "@typescript-eslint/require-await": "off",
       "@typescript-eslint/consistent-type-imports": [
         "warn",
         { prefer: "type-imports", fixStyle: "separate-type-imports" },

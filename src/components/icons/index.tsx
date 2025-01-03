@@ -5,7 +5,7 @@ interface SVGIconProps {
   pathFill?: string;
 }
 
-export const Add = (props: SVGIconProps) => (
+export const Add = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -23,7 +23,7 @@ export const Add = (props: SVGIconProps) => (
   </svg>
 );
 
-export const Alert = (props: SVGIconProps) => (
+export const Alert = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -40,7 +40,7 @@ export const Alert = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Bookmark = (props: SVGIconProps) => (
+export const Bookmark = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -57,7 +57,7 @@ export const Bookmark = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Check = (props: SVGIconProps) => (
+export const Check = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -74,7 +74,7 @@ export const Check = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const ChevronLeft = (props: SVGIconProps) => (
+export const ChevronLeft = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -91,7 +91,7 @@ export const ChevronLeft = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Comment = (props: SVGIconProps) => (
+export const Comment = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -108,7 +108,7 @@ export const Comment = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Email = (props: SVGIconProps) => (
+export const Email = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -124,7 +124,7 @@ export const Email = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Google = (props: SVGIconProps) => (
+export const Google = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -158,7 +158,7 @@ export const Google = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Grid = (props: SVGIconProps) => (
+export const Grid = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -175,7 +175,7 @@ export const Grid = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Home = (props: SVGIconProps) => (
+export const Home = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -199,7 +199,7 @@ export const Home = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Inbox = (props: SVGIconProps) => (
+export const Inbox = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -223,7 +223,7 @@ export const Inbox = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Info = (props: SVGIconProps) => (
+export const Info = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -247,7 +247,7 @@ export const Info = (props: SVGIconProps) => (
     </defs>
   </svg>
 );
-export const Like = (props: SVGIconProps) => (
+export const Like = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -264,7 +264,7 @@ export const Like = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Media = (props: SVGIconProps) => (
+export const Media = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -288,7 +288,7 @@ export const Media = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const More = (props: SVGIconProps) => (
+export const More = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -305,7 +305,7 @@ export const More = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Notification = (props: SVGIconProps) => (
+export const Notification = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -322,7 +322,7 @@ export const Notification = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Paper = (props: SVGIconProps) => (
+export const Paper = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -346,7 +346,7 @@ export const Paper = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Search = (props: SVGIconProps) => (
+export const Search = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -363,7 +363,7 @@ export const Search = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Send = (props: SVGIconProps) => (
+export const Send = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -387,7 +387,7 @@ export const Send = (props: SVGIconProps) => (
     </defs>
   </svg>
 );
-export const Settings = (props: SVGIconProps) => (
+export const Settings = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -412,7 +412,7 @@ export const Settings = (props: SVGIconProps) => (
     </defs>
   </svg>
 );
-export const Upload = (props: SVGIconProps) => (
+export const Upload = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -438,7 +438,7 @@ export const Upload = (props: SVGIconProps) => (
     </defs>
   </svg>
 );
-export const User = (props: SVGIconProps) => (
+export const User = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -455,7 +455,7 @@ export const User = (props: SVGIconProps) => (
     />
   </svg>
 );
-export const Write = (props: SVGIconProps) => (
+export const Write = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -480,7 +480,7 @@ export const Write = (props: SVGIconProps) => (
     </defs>
   </svg>
 );
-export const X = (props: SVGIconProps) => (
+export const X = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -494,6 +494,26 @@ export const X = (props: SVGIconProps) => (
       strokeLinejoin="round"
       strokeWidth={1.75}
       d="M15 5 5 15M5 5l10 10"
+    />
+  </svg>
+);
+
+export const Logo = ({ props }: SVGIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={40}
+    height={40}
+    fill="none"
+    {...props}
+  >
+    <rect width={40} height={40} fill="#4C68D5" rx={20} />
+    <path
+      fill="#fff"
+      d="m24.477 11.348-6.273-3.793A3.748 3.748 0 0 0 16.254 7c-2.045 0-3.92 1.712-3.92 4.105v14.202l12.143-7.34c2.431-1.472 2.431-5.147 0-6.618Zm-8.629 7.1v-7.58l6.268 3.789-6.268 3.791Z"
+    />
+    <path
+      fill="#fff"
+      d="M27.849 32.984c0 .043-11.858-.018-11.858-.018l-1.048-.123c-1.696-.199-2.999-1.72-2.941-3.508 0-.043.004-.083.006-.125a3.908 3.908 0 0 1 .778-2.122c.187-.242.415-.446.673-.6l9.02-5.415c1.862-1.12 3.414-1.511 4.22-3.539a5.623 5.623 0 0 0 .377-2.396l-.031-.552.92 5.334c.118.906-.064 1.834-.544 2.597a3.547 3.547 0 0 1-1.126 1.13L15.83 28.895a.322.322 0 0 0-.03.02c-.286.215-.11.693.241.673l8.712.053c1.691-.098 3.1 1.571 3.097 3.344Z"
     />
   </svg>
 );

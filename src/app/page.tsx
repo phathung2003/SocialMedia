@@ -1,9 +1,3 @@
-import HomePage from "@/component/page/homepage";
-
-export default function Home() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+export default async function page() {
+  return <h1>Hello Word</h1>;
 }
