@@ -69,7 +69,7 @@ const config = tseslint.config(
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
-
+      "tailwindcss/no-custom-classname": "off",
       "@typescript-eslint/consistent-type-imports": [
         "warn",
         { prefer: "type-imports", fixStyle: "separate-type-imports" },
@@ -104,7 +104,7 @@ const config = tseslint.config(
     },
   },
 
-  prettierConfig,
+  prettierConfig
 );
 
 export default config;
