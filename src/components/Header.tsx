@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <div className="header" id="header">
       <div className="logo-container" id="logo">
-        <Logo />
+        <Logo props={{ fontSize: 40 }} />
         <h4 id="brand-name">Social</h4>
       </div>
 

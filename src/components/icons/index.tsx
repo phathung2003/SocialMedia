@@ -40,6 +40,7 @@ export const Alert = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Bookmark = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +58,7 @@ export const Bookmark = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Check = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -74,6 +76,7 @@ export const Check = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const ChevronLeft = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -91,6 +94,7 @@ export const ChevronLeft = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Comment = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -108,6 +112,7 @@ export const Comment = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Email = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -124,6 +129,7 @@ export const Email = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Google = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -158,6 +164,7 @@ export const Google = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Grid = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -175,6 +182,7 @@ export const Grid = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Home = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -199,6 +207,7 @@ export const Home = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Inbox = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -223,6 +232,7 @@ export const Inbox = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Info = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -247,6 +257,7 @@ export const Info = ({ props }: SVGIconProps) => (
     </defs>
   </svg>
 );
+
 export const Like = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -264,6 +275,7 @@ export const Like = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Media = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -288,6 +300,7 @@ export const Media = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const More = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -305,6 +318,7 @@ export const More = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Notification = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -322,6 +336,7 @@ export const Notification = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Paper = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -346,6 +361,7 @@ export const Paper = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Search = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -363,6 +379,7 @@ export const Search = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Send = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -387,6 +404,7 @@ export const Send = ({ props }: SVGIconProps) => (
     </defs>
   </svg>
 );
+
 export const Settings = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -412,6 +430,7 @@ export const Settings = ({ props }: SVGIconProps) => (
     </defs>
   </svg>
 );
+
 export const Upload = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -438,6 +457,7 @@ export const Upload = ({ props }: SVGIconProps) => (
     </defs>
   </svg>
 );
+
 export const User = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -455,6 +475,7 @@ export const User = ({ props }: SVGIconProps) => (
     />
   </svg>
 );
+
 export const Write = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -480,6 +501,7 @@ export const Write = ({ props }: SVGIconProps) => (
     </defs>
   </svg>
 );
+
 export const X = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
