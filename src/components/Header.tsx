@@ -20,7 +20,7 @@ export const Header = () => {
       </div>
 
       <div className="option-container" id="option">
-        <h4 id="option-lable">Log out</h4>
+        <p id="option-lable">Logout</p>
         <User props={{ fontSize: 20 }} />
       </div>
     </div>

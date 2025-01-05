@@ -34,10 +34,10 @@
 /* Header */
 .header {
   @apply col-span-12 flex items-center w-auto  h-[80px] justify-between;
-  //   align-items: center;
-  //   width: auto;
-  //   height: 80px;
-  //   padding: 20px 92px 0 92px;
+  // align-items: center;
+  // width: auto;
+  // height: 80px;
+  // padding: 20px 92px 0 92px;
 
   background-color: var(--headerBackground);
   color: var(--headerForeground);
@@ -122,16 +122,5 @@
   font-family: "Inter";
   font-weight: 500;
   font-size: 14px;
-}
-
-/* Body */
-.body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  width: auto;
-  min-height: calc(100vh - 80px);
-  padding: 48px 92px 0 92px;
-  background-color: var(--bodyBackground);
-  color: var(--bodyForeground);
+  color: #27364b;
 }

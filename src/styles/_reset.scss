@@ -23,7 +23,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 body {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }

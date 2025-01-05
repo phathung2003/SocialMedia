@@ -1,2 +1,4 @@
 @use "../styles/index.scss";
-@use "../styles/font.scss";
+@use "/public/fonts/Geist/geist.scss";
+@use "/public/fonts/Inter/inter.scss";
+@use "/public/fonts/Manrope/manrope.scss";
