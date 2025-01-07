@@ -13,11 +13,12 @@ export const Header = () => {
   return (
     <>
       <WebHeader />
-      <MobileHeader_Message />
+      <MobileHeader_Search />
     </>
   );
 };
 
+/* Web */
 const WebHeader = () => {
   return (
     <div className="header web" id="header">
@@ -39,6 +40,7 @@ const WebHeader = () => {
   );
 };
 
+/* Mobile */
 export const MobileHeader_Login = () => {
   return (
     <div className="header single-element mobile">
@@ -65,17 +67,28 @@ export const MobileHeader_Main = () => {
   );
 };
 
-const MobileHeader_Message = () => {
+export const MobileHeader_Message = () => {
   return (
     <div className="header mobile">
       <div className="back container" id="back">
         <LeftArrow props={{ fontSize: 20 }} />
-        <label>Back</label>
+        <label id="back-lable">Back</label>
       </div>
 
       <div className="account-status container" id="account-status">
-        <label>Online</label>
+        <label id="account-status-lable">Online</label>
         <More props={{ fontSize: 20 }} />
+      </div>
+    </div>
+  );
+};
+
+export const MobileHeader_Search = () => {
+  return (
+    <div className="header single-element mobile">
+      <div className="search container" id="search-bar">
+        <Search props={{ fontSize: 20 }} />
+        <input type="text" id="search-input" placeholder="Search" />
       </div>
     </div>
   );
