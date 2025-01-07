@@ -1,10 +1,10 @@
 /* Body */
 .body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-columns: 1fr 1fr 1fr;
 
   width: auto;
-  padding: 48px 92px 0 92px;
+  // padding: 48px 92px 0 92px;
   background-color: var(--bodyBackground);
   color: var(--bodyForeground);
 }
