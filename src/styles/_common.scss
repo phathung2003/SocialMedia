@@ -6,7 +6,7 @@
   /* Biến màu (Sáng - tối) */
   --headerBackground: #ffffff;
   --headerForeground: #171717;
-  --headerBorder: #ecf0f5;
+  --border: #ecf0f5;
 
   --bodyBackground: #ffffff;
   --bodyForeground: #171717;
@@ -34,7 +34,8 @@
       --searchBorder: #e2e8f0;
       --searchFocusBorder: #3182ce;
       }
-    } */
+    } 
+*/
 
 h1 {
   @apply text-h1 font-semibold;

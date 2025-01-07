@@ -187,24 +187,25 @@ export const Grid = ({ props }: SVGIconProps) => (
 export const Home = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
+    width={20}
+    height={20}
+    viewBox="0 0 20 20"
     fill="none"
     {...props}
   >
     <path
-      stroke="#5D6778"
+      d="M2.5 7.5L10 1.66667L17.5 7.5V16.6667C17.5 17.1087 17.3244 17.5326 17.0118 17.8452C16.6993 18.1577 16.2754 18.3333 15.8333 18.3333H4.16667C3.72464 18.3333 3.30072 18.1577 2.98816 17.8452C2.67559 17.5326 2.5 17.1087 2.5 16.6667V7.5Z"
+      stroke="#838B98"
+      strokeWidth="1.75"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.75}
-      d="M2.5 7.5 10 1.667 17.5 7.5v9.167a1.667 1.667 0 0 1-1.667 1.666H4.167A1.667 1.667 0 0 1 2.5 16.667V7.5Z"
     />
     <path
-      stroke="#5D6778"
+      d="M7.5 18.3333V10H12.5V18.3333"
+      stroke="#838B98"
+      strokeWidth="1.75"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.75}
-      d="M7.5 18.333V10h5v8.333"
     />
   </svg>
 );
@@ -338,17 +339,25 @@ export const More = ({ props }: SVGIconProps) => (
 export const Notification = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
+    width={20}
+    height={20}
+    viewBox="0 0 21 20"
     fill="none"
     {...props}
   >
     <path
-      stroke="#5D6778"
+      d="M15.3333 6.66667C15.3333 5.34059 14.8065 4.06882 13.8688 3.13113C12.9311 2.19345 11.6593 1.66667 10.3333 1.66667C9.00717 1.66667 7.7354 2.19345 6.79772 3.13113C5.86004 4.06882 5.33325 5.34059 5.33325 6.66667C5.33325 12.5 2.83325 14.1667 2.83325 14.1667H17.8333C17.8333 14.1667 15.3333 12.5 15.3333 6.66667Z"
+      stroke="#838B98"
+      strokeWidth="1.75"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.75}
-      d="M15 6.667a5 5 0 0 0-10 0c0 5.833-2.5 7.5-2.5 7.5h15S15 12.5 15 6.667ZM11.442 17.5a1.666 1.666 0 0 1-2.884 0"
+    />
+    <path
+      d="M11.7749 17.5C11.6284 17.7526 11.4181 17.9622 11.1651 18.1079C10.9121 18.2537 10.6253 18.3304 10.3333 18.3304C10.0413 18.3304 9.75443 18.2537 9.50141 18.1079C9.2484 17.9622 9.03811 17.7526 8.8916 17.5"
+      stroke="#838B98"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
