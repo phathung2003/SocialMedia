@@ -36,12 +36,12 @@
   gap: 12px;
   justify-content: left;
   flex: 1;
-}
 
-.logo label {
-  font-family: "Manrope";
-  font-weight: 800;
-  font-size: 20px;
+  label {
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 20px;
+  }
 }
 
 /* Thanh tìm kiếm */
@@ -58,6 +58,22 @@
 
   gap: 12px;
   transition: border-color 0.2s ease;
+
+  input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .mobile {
+    border-radius: 6px;
+  }
 }
 
 .search:focus-within {
@@ -70,26 +86,10 @@
     opacity 0.3s ease;
 }
 
-.mobile .search {
-  border-radius: 6px;
-}
-
 .search:focus-within .search-icon {
   transform: translateX(-20px);
   opacity: 0;
   visibility: hidden;
-}
-
-.search input {
-  flex: 1;
-  width: 100%;
-  border: none;
-  outline: none;
-  transition: transform 0.3s ease;
-
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 14px;
 }
 
 .search:focus-within input {
@@ -123,17 +123,17 @@
 .account-status {
   justify-content: right;
   gap: 16px;
-
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 12px;
   color: #5d6778;
-}
 
-.account-status label {
-  border: 1px solid #ecf0f5;
-  padding: 2px 12px 2px 12px;
-  border-radius: 999px;
+  label {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 12px;
+
+    border: 1px solid #ecf0f5;
+    padding: 2px 12px 2px 12px;
+    border-radius: 999px;
+  }
 }
 
 /* Header (Web)*/
@@ -159,6 +159,11 @@
 
 .single-element {
   justify-content: center;
+
+  .logo {
+    flex: none;
+    width: auto;
+  }
 }
 
 .web {
