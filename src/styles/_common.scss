@@ -2,20 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  max-width: 100%;
+:root {
+  /* Biến màu (Sáng - tối) */
+  --headerBackground: #ffffff;
+  --headerForeground: #171717;
+  --headerBorder: #ecf0f5;
 
-  .wrapper {
-    @apply grid grid-cols-4 gap-[24px];
-    @apply tablet:grid-cols-12 tablet:gap-[40px];
+  --bodyBackground: #ffffff;
+  --bodyForeground: #171717;
 
-    .child {
-      @apply w-auto;
-      @apply tablet:w-[56px];
-      @apply desktop:w-[70px];
-    }
-  }
+  --footerBackground: #ffffff;
+  --footerForeground: white;
+
+  --searchBorder: #e2e8f0;
+  --searchFocusBorder: #3182ce;
 }
+
+/* 
+    @media (prefers-color-scheme: dark) {
+      :root {
+      --headerBackground: #ffffff;
+      --headerForeground: #171717;
+      --headerBorder: #ecf0f5;
+    
+      --bodyBackground: #ffffff;
+      --bodyForeground: #171717;
+    
+      --footerBackground: #ffffff;
+      --footerForeground: white;
+    
+      --searchBorder: #e2e8f0;
+      --searchFocusBorder: #3182ce;
+      }
+    } */
 
 h1 {
   @apply text-h1 font-semibold;

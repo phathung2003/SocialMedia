@@ -6,8 +6,8 @@ interface IProps {
 
 export const Container: React.FC<IProps> = ({ children }) => {
   return (
-    <div className="container">
-      <div className="wrapper">{children}</div>
+    <div>
+      <div>{children}</div>
     </div>
   );
 };

@@ -11,16 +11,17 @@ import {
 
 export const Header = () => {
   return (
-    <>
-      <Header_Login />
-    </>
+    <div id="header">
+      <WebHeader />
+      <MobileHeader_Search />
+    </div>
   );
 };
 
 /* Web */
 export const WebHeader = () => {
   return (
-    <div className="header web" id="header">
+    <div className="header web">
       <div className="logo container" id="logo">
         <LogoWeb props={{ fontSize: 40 }} />
         <label id="brand-name">Social</label>
@@ -87,7 +88,7 @@ export const MobileHeader_Search = () => {
 export const Header_Login = () => {
   return (
     <div className="header single-element">
-      <div className="logo container" id="logo">
+      <div className="single-element logo container" id="logo">
         <LogoMobile props={{ fontSize: 32 }} />
         <label id="brand-name">Social</label>
       </div>
