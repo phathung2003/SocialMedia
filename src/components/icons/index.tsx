@@ -77,20 +77,21 @@ export const Check = ({ props }: SVGIconProps) => (
   </svg>
 );
 
-export const ChevronLeft = ({ props }: SVGIconProps) => (
+export const LeftArrow = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
+    width={20}
+    height={20}
+    viewBox="0 0 20 20"
     fill="none"
     {...props}
   >
     <path
+      d="M12.5 15L7.5 10L12.5 5"
       stroke="#5D6778"
+      strokeWidth="1.75"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.75}
-      d="m12.5 15-5-5 5-5"
     />
   </svg>
 );
@@ -304,17 +305,32 @@ export const Media = ({ props }: SVGIconProps) => (
 export const More = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
     fill="none"
     {...props}
   >
     <path
+      d="M10.0001 10.8334C10.4603 10.8334 10.8334 10.4603 10.8334 10C10.8334 9.53978 10.4603 9.16669 10.0001 9.16669C9.53984 9.16669 9.16675 9.53978 9.16675 10C9.16675 10.4603 9.53984 10.8334 10.0001 10.8334Z"
       stroke="#5D6778"
+      strokeWidth="1.75"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.75}
-      d="M10 10.833a.833.833 0 1 0 0-1.666.833.833 0 0 0 0 1.666ZM15 10.833a.833.833 0 1 0 0-1.666.833.833 0 0 0 0 1.666ZM5 10.833a.833.833 0 1 0 0-1.666.833.833 0 0 0 0 1.666Z"
+    />
+    <path
+      d="M15.0001 10.8334C15.4603 10.8334 15.8334 10.4603 15.8334 10C15.8334 9.53978 15.4603 9.16669 15.0001 9.16669C14.5398 9.16669 14.1667 9.53978 14.1667 10C14.1667 10.4603 14.5398 10.8334 15.0001 10.8334Z"
+      stroke="#5D6778"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.00008 10.8334C5.46032 10.8334 5.83341 10.4603 5.83341 10C5.83341 9.53978 5.46032 9.16669 5.00008 9.16669C4.53984 9.16669 4.16675 9.53978 4.16675 10C4.16675 10.4603 4.53984 10.8334 5.00008 10.8334Z"
+      stroke="#5D6778"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -383,8 +399,8 @@ export const Search = ({ props }: SVGIconProps) => (
 export const Send = ({ props }: SVGIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
+    width={20}
+    height={20}
     fill="none"
     {...props}
   >

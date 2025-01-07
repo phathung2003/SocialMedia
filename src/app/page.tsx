@@ -1,7 +1,7 @@
 export default async function page() {
   return (
-    <h1 className="body" id="body">
-      Hello Word
-    </h1>
+    <div className="body" id="body">
+      <h1>Hello Word</h1>
+    </div>
   );
 }
