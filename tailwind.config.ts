@@ -8,6 +8,10 @@ export default {
     "./src/styles/**/*.scss",
   ],
   theme: {
+    fontFamily: {
+      beVn: ["Be_Vietnam_Pro"],
+      manrope: ["Manrope"],
+    },
     extend: {
       colors: {
         primary: {
