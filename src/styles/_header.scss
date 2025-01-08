@@ -1,144 +1,51 @@
-@import "common";
+.wrapper_header {
+  @apply fixed inset-x-0 top-0 shadow hidden h-[80px] z-10 bg-neutral-white-900;
+  @apply tablet:flex;
 
-/* Logo */
-.logo {
-  gap: 12px;
-  justify-content: left;
-  flex: 1;
+  .wrapper_child {
+    @apply flex w-full px-[92px] tablet:grid grid-cols-12 tablet:gap-[40px] content-center justify-items-center;
 
-  label {
-    @apply font-manrope;
-    font-weight: 800;
-    font-size: 20px;
-  }
-}
-
-/* Thanh tìm kiếm */
-.search {
-  display: flex;
-  align-items: center;
-  padding: 9px 24px 9px 24px;
-
-  width: 40%;
-  flex: 2;
-  height: 44px;
-  border: 1px solid var(--searchBorder);
-  border-radius: 8px;
-
-  gap: 12px;
-  transition: border-color 0.2s ease;
-  z-index: 100;
-  input {
-    flex: 1;
-    width: 100%;
-    border: none;
-    outline: none;
-    transition: transform 0.3s ease;
-
-    font-weight: 400;
-    font-size: 14px;
-  }
-
-  .search-icon {
-    transition:
-      transform 0.3s ease,
-      opacity 0.3s ease;
-  }
-
-  &:focus-within {
-    border-color: var(--searchFocusBorder);
-
-    input {
-      transform: translateX(calc(-20px - 12px));
+    .logo {
+      @apply flex w-full items-center gap-x-4 col-span-3;
     }
-    .search-icon {
-      transform: translateX(-20px);
-      opacity: 0;
-      visibility: hidden;
+
+    .search {
+      @apply items-center border border-neutral-300 gap-3 transition-[border-color] duration-[0.2s] ease-[ease] py-[9px] rounded-md border-solid relative flex w-full overflow-hidden col-span-6 max-w-[582px];
+
+      input {
+        @apply transition-transform duration-[0.3s] ease-[ease] text-sm border-none ml-[60px] w-full;
+        outline: none;
+      }
+
+      .search-icon {
+        transition:
+          transform 0.3s ease,
+          opacity 0.3s ease;
+      }
+
+      &:focus-within {
+        @apply border-neutral-500;
+
+        input {
+          transform: translateX(calc(-20px - 12px));
+        }
+        .search-icon {
+          transform: translateX(-20px);
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      border-radius: 6px;
+    }
+
+    .user {
+      @apply flex w-full items-center justify-end col-span-3 gap-x-5;
     }
   }
-
-  @include mobile {
-    border-radius: 6px;
-  }
 }
 
-/* Cài đặt */
-.option {
-  justify-content: right;
-  gap: 16px;
-  flex: 1;
-  font-weight: 500;
-  font-size: 14px;
-  color: #27364b;
-}
-
-/* Nút quay về */
-.back {
-  padding: 5px 12px; /* Giảm padding để thu nhỏ thẻ */
-  width: 85px;
-  gap: 10px;
-
-  font-weight: 500;
-  font-size: 14px;
-  color: #5d6778;
-}
-
-/* Tình trạng tài khoản */
-.account-status {
-  justify-content: right;
-  gap: 16px;
-  color: #5d6778;
-
-  label {
-    font-weight: 500;
-    font-size: 12px;
-
-    border: 1px solid #ecf0f5;
-    padding: 2px 12px 2px 12px;
-    border-radius: 999px;
-  }
-}
-
-/* Set up Header */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100vw;
-  height: 80px;
-  padding: 20px 92px 0 92px;
-
-  background-color: var(--headerBackground);
-  color: var(--headerForeground);
-
-  border-bottom: 1px solid var(--border);
-
-  @include mobile {
-    position: fixed;
-    top: 0;
-
-    height: 72px;
-    padding: 14px 24px 14px 24px;
-  }
-}
-
-/* Các phần tử khác */
-.container {
-  display: flex;
-  align-items: center;
-}
-
-.single-element {
-  justify-content: center;
-
-  .logo {
-    flex: none;
-    width: auto;
-  }
+.wrapper_header_mobile {
+  @apply col-span-12 px-6 py-[20px] shadow-md h-[72px] block fixed top-0 bg-neutral-white-900 inset-x-0;
+  @apply tablet:hidden;
 }

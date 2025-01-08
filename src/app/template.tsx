@@ -1,23 +1,24 @@
 import {
   Container,
   Header,
+  HeaderMobile,
   MobileNavigation,
   WebNavigation,
 } from "@/components";
+import Suggestion from "@/components/Suggestion";
 
 const RootTemplate = ({ children }: { children: React.ReactNode }) => {
   return (
-    <Container>
+    <>
       <Header />
-      <div className="body" id="body">
-        <WebNavigation />
-        <div className="content" id="content">
-          {children}
-        </div>
-      </div>
-
+      <HeaderMobile />
       <MobileNavigation />
-    </Container>
+      <Container>
+        <WebNavigation />
+        <div className="child">{children}</div>
+        <Suggestion />
+      </Container>
+    </>
   );
 };
 export default RootTemplate;

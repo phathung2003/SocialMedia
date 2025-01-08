@@ -5,5 +5,5 @@ interface IProps {
 }
 
 export const Container: React.FC<IProps> = ({ children }) => {
-  return <div>{children}</div>;
+  return <div className="layout">{children}</div>;
 };

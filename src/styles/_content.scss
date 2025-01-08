@@ -1,23 +1,13 @@
-@import "common";
-
-.body {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Sidebar trái, nội dung chính, Sidebar phải */
+.content {
   gap: 10px; /* Khoảng cách giữa các phần */
-
   width: 100vw;
   height: auto;
   margin-top: 80px;
   padding: 48px 92px 0 92px;
   background-color: var(--bodyBackground);
   color: var(--bodyForeground);
-
   line-height: 1.5;
-
-  @include mobile {
-    display: flex;
-    padding: 24px 24px 72px 24px;
-  }
+  @apply md:flex md:px-6 md:pt-6 md:py-[72px] col-span-6;
 }
 
 .content {

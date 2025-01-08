@@ -35,11 +35,13 @@ export default {
           700: "#404040",
           800: "#262626",
           900: "#171717", // B900
+          white: {
+            100: "#FAFBFF", // W400
+            200: "#F8FAFC", // W400
+            900: "#FFFFFF", // W100
+          },
         },
-        white: {
-          100: "#FFFFFF", // W100
-          200: "#F8FAFC", // W400
-        },
+
         semantic: {
           green: {
             100: "#D1FAE5", // G100
