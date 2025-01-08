@@ -1,3 +1,5 @@
+@import "common";
+
 /* Logo */
 .logo {
   gap: 12px;
@@ -37,29 +39,28 @@
     font-size: 14px;
   }
 
-  .mobile {
+  .search-icon {
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  &:focus-within {
+    border-color: var(--searchFocusBorder);
+
+    input {
+      transform: translateX(calc(-20px - 12px));
+    }
+    .search-icon {
+      transform: translateX(-20px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @include mobile {
     border-radius: 6px;
   }
-}
-
-.search:focus-within {
-  border-color: var(--searchFocusBorder);
-}
-
-.search-icon {
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
-}
-
-.search:focus-within .search-icon {
-  transform: translateX(-20px);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.search:focus-within input {
-  transform: translateX(calc(-20px - 12px));
 }
 
 /* Cài đặt */
@@ -112,26 +113,13 @@
   color: var(--headerForeground);
 
   border-bottom: 1px solid var(--border);
-}
 
-.web {
-  display: flex;
-}
+  @include mobile {
+    position: fixed;
+    top: 0;
 
-.mobile {
-  height: 72px;
-  padding: 14px 24px 14px 24px;
-  display: none;
-}
-
-/* Kích cỡ màn hình điện thoại */
-@media (max-width: 800px) {
-  .mobile {
-    display: flex;
-  }
-
-  .web {
-    display: none;
+    height: 72px;
+    padding: 14px 24px 14px 24px;
   }
 }
 

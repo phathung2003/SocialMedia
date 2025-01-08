@@ -24,6 +24,7 @@ html:focus-within {
 }
 body {
   min-height: calc(100vh - 80px);
+  overflow-x: hidden;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
