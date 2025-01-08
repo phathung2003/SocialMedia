@@ -1,7 +1,6 @@
 export default async function page() {
   return (
-    <div className="body" id="body">
-      {" "}
+    <div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
         facilisis felis sed metus volutpat, quis sagittis erat varius.

@@ -1,11 +1,22 @@
-import { Container, Header, Footer } from "@/components";
+import {
+  Container,
+  Header,
+  MobileNavigation,
+  WebNavigation,
+} from "@/components";
 
 const RootTemplate = ({ children }: { children: React.ReactNode }) => {
   return (
     <Container>
       <Header />
-      {children}
-      <Footer />
+      <div className="body" id="body">
+        <WebNavigation />
+        <div className="content" id="content">
+          {children}
+        </div>
+      </div>
+
+      <MobileNavigation />
     </Container>
   );
 };
